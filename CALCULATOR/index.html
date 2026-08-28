@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCE CALCULATOR</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>CALCULATOR</h1>
+
+        <div class="calculator">
+            <div class="display">
+                <input class="calc-buttons" id="display" type="text" value="0" readonly>
+            </div>
+
+            <div class="button">
+                <button onclick="clearCalc()">C</button>
+                <button onclick="backspace()">⌫</button>
+                <button onclick="addCalc('%')">%</button>
+                <button class="operator" onclick="oneCalc('/')">÷</button>
+
+                <button onclick="oneCalc('7')">7</button>
+                <button onclick="oneCalc('8')">8</button>
+                <button onclick="oneCalc('9')">9</button>
+                <button class="operator" onclick="oneCalc('*')">×</button>
+
+                <button onclick="oneCalc('4')">4</button>
+                <button onclick="oneCalc('5')">5</button>
+                <button onclick="oneCalc('6')">6</button>
+                <button class="operator" onclick="oneCalc('-')">−</button>
+
+                <button onclick="oneCalc('1')">1</button>
+                <button onclick="oneCalc('2')">2</button>
+                <button onclick="oneCalc('3')">3</button>
+                <button class="operator" onclick="oneCalc('+')">+</button>
+
+                <button onclick="oneCalc('0')">0</button>
+                <button onclick="oneCalc('.')">.</button>
+                <button class="equal" onclick="calculate()">=</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
